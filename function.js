@@ -3,19 +3,25 @@ let compScore = 0;
 
 const choices = document.querySelectorAll(".borders");
 const anounce = document.querySelector("#winning_anounce");
+const UserScore = document.querySelector("#user_score");
+const computerScore = document.querySelector("#comp-score");
 
 const drawGame = () => {
   anounce.innerText = "Game Draw !!";
   anounce.style.backgroundColor = "darkcyan";
 };
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, checkId, computerChoice) => {
   if (userWin) {
-    anounce.innerText = "You Win !!";
+    anounce.innerText = `You Winn , Your ${checkId} beats ${computerChoice}`;
     anounce.style.backgroundColor = "green";
+    myScore++;
+    UserScore.innerText = myScore;
   } else {
-    anounce.innerText = "You Loose !! Computer Wins";
+    anounce.innerText = `Computer Wins ${computerChoice} beats Your ${checkId}`;
     anounce.style.backgroundColor = "red";
+    compScore++;
+    computerScore.innerText = compScore;
   }
 };
 
@@ -45,7 +51,7 @@ const playGame = (checkId) => {
       userWin = computerChoice === "Rock" ? false : true;
     }
 
-    showWinner(userWin);
+    showWinner(userWin, checkId, computerChoice);
   }
 };
 
