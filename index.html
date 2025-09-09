@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>rock paper scissors</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="images_section">
+        <!-- rock image -->
+        <div class="borders" id="Rock">
+          <img class="imagesof" src="/images/rock.png" alt="rock" />
+          <h1>Rock</h1>
+        </div>
+
+        <!-- paper image -->
+        <div class="borders" id="Paper">
+          <img class="imagesof" src="/images/paper.png" alt="paper" />
+          <h1>Paper</h1>
+        </div>
+        <!-- scissor images -->
+
+        <div class="borders" id="Scissors">
+          <img class="imagesof" src="/images/scissors.png" alt="scissor" />
+          <h1>Scissor</h1>
+        </div>
+      </div>
+    </main>
+    <!-- creating score board  -->
+    <div class="score_board">
+      <div class="score" id="myscore">
+        <h1 id="user_score">0</h1>
+        <h1>You</h1>
+      </div>
+      <div class="score" id="compscore">
+        <h1 id="comp-score">0</h1>
+        <h1>Comp</h1>
+      </div>
+    </div>
+    <!-- creating anouncement banner -->
+    <div class="anouncement-banner">
+      <h1 id="winning_anounce">Let's See Who is The Winner</h1>
+    </div>
+  </body>
+  <script src="function.js"></script>
+</html>

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  background-color: darkcyan;
+  height: 5vmax;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+.navbar h1 {
+  text-transform: capitalize;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.images_section {
+  display: flex;
+  height: 300px;
+  gap: 10px;
+}
+
+.borders {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagesof {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff; /* Border add kiya */
+  transition: all 0.3s ease-in-out; /* Smooth hover animation */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* halka shadow */
+  cursor: pointer;
+}
+
+.imagesof:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 3px solid green;
+}
+
+/* creating score board */
+
+.score_board {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+#myscore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 90px;
+}
+
+#compscore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* anuncement banner edeting  */
+
+.anouncement-banner {
+  justify-content: center;
+  margin-top: 50px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#winning_anounce {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: darkcyan;
+  border: 2px solid black;
+}
